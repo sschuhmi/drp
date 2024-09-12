@@ -3,7 +3,7 @@
 
 ## Project "Disaster Response Pipelines"
 
-This project is included within Udacity´s Data Scientist Nanodegree Program ([nd025](https://www.udacity.com/enrollment/nd025)).
+This project is included within Udacity´s 'Data Scientist' Nanodegree Program ([nd025](https://www.udacity.com/enrollment/nd025)).
 
 ### Table of Contents
  
