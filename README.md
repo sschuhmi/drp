@@ -17,8 +17,10 @@ This project is included within Udacity´s 'Data Scientist' Nanodegree Program (
 ## Project Motivation <a name="motivation"></a>
 
 This project includes a data set containing real messages that were sent during disaster events. 
+
 Based on these, a machine learning pipeline was created to categorize these events so that one can send the messages to an appropriate disaster relief agency.
-It also includes a web app where an emergency worker can input a new message and get classification results in several categories. The web app also displays visualizations of the data.
+
+The project also includes a web app where an emergency worker can input a new message and get classification results in several categories. The web app also displays visualizations of the data.
 
 ## Project Data <a name="project_data"></a>
 
