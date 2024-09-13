@@ -1,0 +1,185 @@
+from sklearn.model_selection import GridSearchCV
+
+parameters = {
+    'clf__estimator__n_estimators': [10, 50, 100],  # Default: 10
+    'clf__estimator__min_samples_split': [2, 3]     # Default: 2
+}
+
+cv = GridSearchCV(pipeline, param_grid=parameters, verbose=10)
+cv.fit(X_train, Y_train)
+
+Fitting 3 folds for each of 6 candidates, totalling 18 fits
+[CV] clf__estimator__min_samples_split=2, clf__estimator__n_estimators=10 
+[CV]  clf__estimator__min_samples_split=2, clf__estimator__n_estimators=10, score=0.21559353066829418, total=  27.4s
+[CV] clf__estimator__min_samples_split=2, clf__estimator__n_estimators=10 
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:   33.7s remaining:    0.0s
+[CV]  clf__estimator__min_samples_split=2, clf__estimator__n_estimators=10, score=0.21788220933780897, total=  27.7s
+[CV] clf__estimator__min_samples_split=2, clf__estimator__n_estimators=10 
+[Parallel(n_jobs=1)]: Done   2 out of   2 | elapsed:  1.1min remaining:    0.0s
+[CV]  clf__estimator__min_samples_split=2, clf__estimator__n_estimators=10, score=0.2122368019530058, total=  27.5s
+[CV] clf__estimator__min_samples_split=2, clf__estimator__n_estimators=50 
+[Parallel(n_jobs=1)]: Done   3 out of   3 | elapsed:  1.7min remaining:    0.0s
+[CV]  clf__estimator__min_samples_split=2, clf__estimator__n_estimators=50, score=0.23207201708880074, total= 1.8min
+[CV] clf__estimator__min_samples_split=2, clf__estimator__n_estimators=50 
+[Parallel(n_jobs=1)]: Done   4 out of   4 | elapsed:  3.8min remaining:    0.0s
+[CV]  clf__estimator__min_samples_split=2, clf__estimator__n_estimators=50, score=0.24015868172108637, total= 1.8min
+[CV] clf__estimator__min_samples_split=2, clf__estimator__n_estimators=50 
+[Parallel(n_jobs=1)]: Done   5 out of   5 | elapsed:  5.8min remaining:    0.0s
+[CV]  clf__estimator__min_samples_split=2, clf__estimator__n_estimators=50, score=0.23756484589563626, total= 1.8min
+[CV] clf__estimator__min_samples_split=2, clf__estimator__n_estimators=100 
+[Parallel(n_jobs=1)]: Done   6 out of   6 | elapsed:  7.9min remaining:    0.0s
+[CV]  clf__estimator__min_samples_split=2, clf__estimator__n_estimators=100, score=0.23725968873970094, total= 3.6min
+[CV] clf__estimator__min_samples_split=2, clf__estimator__n_estimators=100 
+[Parallel(n_jobs=1)]: Done   7 out of   7 | elapsed: 11.8min remaining:    0.0s
+[CV]  clf__estimator__min_samples_split=2, clf__estimator__n_estimators=100, score=0.2436679890143424, total= 3.6min
+[CV] clf__estimator__min_samples_split=2, clf__estimator__n_estimators=100 
+[Parallel(n_jobs=1)]: Done   8 out of   8 | elapsed: 15.8min remaining:    0.0s
+[CV]  clf__estimator__min_samples_split=2, clf__estimator__n_estimators=100, score=0.24015868172108637, total= 3.6min
+[CV] clf__estimator__min_samples_split=3, clf__estimator__n_estimators=10 
+[Parallel(n_jobs=1)]: Done   9 out of   9 | elapsed: 19.8min remaining:    0.0s
+[CV]  clf__estimator__min_samples_split=3, clf__estimator__n_estimators=10, score=0.21299969484284406, total=  25.3s
+[CV] clf__estimator__min_samples_split=3, clf__estimator__n_estimators=10 
+[CV]  clf__estimator__min_samples_split=3, clf__estimator__n_estimators=10, score=0.21025328043942632, total=  25.0s
+[CV] clf__estimator__min_samples_split=3, clf__estimator__n_estimators=10 
+[CV]  clf__estimator__min_samples_split=3, clf__estimator__n_estimators=10, score=0.21132133048519988, total=  25.4s
+[CV] clf__estimator__min_samples_split=3, clf__estimator__n_estimators=50 
+[CV]  clf__estimator__min_samples_split=3, clf__estimator__n_estimators=50, score=0.22932560268538296, total= 1.6min
+[CV] clf__estimator__min_samples_split=3, clf__estimator__n_estimators=50 
+[CV]  clf__estimator__min_samples_split=3, clf__estimator__n_estimators=50, score=0.23771742447360392, total= 1.7min
+[CV] clf__estimator__min_samples_split=3, clf__estimator__n_estimators=50 
+[CV]  clf__estimator__min_samples_split=3, clf__estimator__n_estimators=50, score=0.23298748855660664, total= 1.7min
+[CV] clf__estimator__min_samples_split=3, clf__estimator__n_estimators=100 
+[CV]  clf__estimator__min_samples_split=3, clf__estimator__n_estimators=100, score=0.2360390601159597, total= 3.2min
+[CV] clf__estimator__min_samples_split=3, clf__estimator__n_estimators=100 
+[CV]  clf__estimator__min_samples_split=3, clf__estimator__n_estimators=100, score=0.24046383887702166, total= 3.2min
+[CV] clf__estimator__min_samples_split=3, clf__estimator__n_estimators=100 
+[CV]  clf__estimator__min_samples_split=3, clf__estimator__n_estimators=100, score=0.2360390601159597, total= 3.3min
+[Parallel(n_jobs=1)]: Done  18 out of  18 | elapsed: 37.9min finished
+
+parameters = {
+    'clf__estimator__n_estimators': [100, 200, 500],  # Default: 10
+    'clf__estimator__min_samples_split': [2]     # Default: 2
+}
+
+cv = GridSearchCV(pipeline, param_grid=parameters, verbose=10)
+cv.fit(X_train, Y_train)
+
+Y_pred_cv = cv.predict(X_test)
+
+i = 0
+for category in category_names:
+    print((i+1),'.',category,':')
+    print(classification_report(Y_test.iloc[:,i]
+                                , Y_pred[:,i], target_names=category_names))
+    i += 1
+
+Fitting 3 folds for each of 3 candidates, totalling 9 fits
+[CV] clf__estimator__min_samples_split=2, clf__estimator__n_estimators=100 
+[CV]  clf__estimator__min_samples_split=2, clf__estimator__n_estimators=100, score=0.23680195300579798, total= 3.6min
+[CV] clf__estimator__min_samples_split=2, clf__estimator__n_estimators=100 
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:  4.1min remaining:    0.0s
+[CV]  clf__estimator__min_samples_split=2, clf__estimator__n_estimators=100, score=0.2351235886481538, total= 3.8min
+[CV] clf__estimator__min_samples_split=2, clf__estimator__n_estimators=100 
+[Parallel(n_jobs=1)]: Done   2 out of   2 | elapsed:  8.3min remaining:    0.0s
+[CV]  clf__estimator__min_samples_split=2, clf__estimator__n_estimators=100, score=0.23771742447360392, total= 3.8min
+[CV] clf__estimator__min_samples_split=2, clf__estimator__n_estimators=200 
+[Parallel(n_jobs=1)]: Done   3 out of   3 | elapsed: 12.5min remaining:    0.0s
+[CV]  clf__estimator__min_samples_split=2, clf__estimator__n_estimators=200, score=0.23436069575831553, total= 7.5min
+[CV] clf__estimator__min_samples_split=2, clf__estimator__n_estimators=200 
+[Parallel(n_jobs=1)]: Done   4 out of   4 | elapsed: 20.7min remaining:    0.0s
+[CV]  clf__estimator__min_samples_split=2, clf__estimator__n_estimators=200, score=0.24336283185840707, total= 7.5min
+[CV] clf__estimator__min_samples_split=2, clf__estimator__n_estimators=200 
+[Parallel(n_jobs=1)]: Done   5 out of   5 | elapsed: 29.0min remaining:    0.0s
+[CV]  clf__estimator__min_samples_split=2, clf__estimator__n_estimators=200, score=0.24214220323466584, total= 7.5min
+[CV] clf__estimator__min_samples_split=2, clf__estimator__n_estimators=500 
+[Parallel(n_jobs=1)]: Done   6 out of   6 | elapsed: 37.2min remaining:    0.0s
+
+Fitting 3 folds for each of 1 candidates, totalling 3 fits
+[CV] clf__estimator__min_samples_split=2, clf__estimator__n_estimators=500 
+[CV]  clf__estimator__min_samples_split=2, clf__estimator__n_estimators=500, score=0.23756484589563626, total=17.8min
+[CV] clf__estimator__min_samples_split=2, clf__estimator__n_estimators=500 
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed: 19.5min remaining:    0.0s
+
+
+AVG scores over 3 folds (RandomForest):
+
+RFC-PARAMETERS			n_estimators
+min_samples_split		10	50	100	200	500
+2				0.215	0.237	0.240	0.240	0.238
+3				0.212	0.233	0.238	-	-
+
+
+CV-optimized AdaBoost:
+
+Fitting 3 folds for each of 9 candidates, totalling 27 fits
+[CV] clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=10 
+[CV]  clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=10, score=0.17927982911199267, total=  19.4s
+[CV] clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=10 
+[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:   24.4s remaining:    0.0s
+[CV]  clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=10, score=0.1821788220933781, total=  19.6s
+[CV] clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=10 
+[Parallel(n_jobs=1)]: Done   2 out of   2 | elapsed:   49.0s remaining:    0.0s
+[CV]  clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=10, score=0.19179127250534025, total=  19.2s
+[CV] clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=50 
+[Parallel(n_jobs=1)]: Done   3 out of   3 | elapsed:  1.2min remaining:    0.0s
+[CV]  clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=50, score=0.20186145865120536, total= 1.1min
+[CV] clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=50 
+[Parallel(n_jobs=1)]: Done   4 out of   4 | elapsed:  2.5min remaining:    0.0s
+[CV]  clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=50, score=0.20918523039365272, total= 1.2min
+[CV] clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=50 
+[Parallel(n_jobs=1)]: Done   5 out of   5 | elapsed:  3.8min remaining:    0.0s
+[CV]  clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=50, score=0.2105584375953616, total= 1.2min
+[CV] clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=100 
+[Parallel(n_jobs=1)]: Done   6 out of   6 | elapsed:  5.0min remaining:    0.0s
+[CV]  clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=100, score=0.20552334452242904, total= 2.2min
+[CV] clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=100 
+[Parallel(n_jobs=1)]: Done   7 out of   7 | elapsed:  7.4min remaining:    0.0s
+[CV]  clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=100, score=0.21376258773268234, total= 2.2min
+[CV] clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=100 
+[Parallel(n_jobs=1)]: Done   8 out of   8 | elapsed:  9.8min remaining:    0.0s
+[CV]  clf__estimator__learning_rate=0.1, clf__estimator__n_estimators=100, score=0.2162038449801648, total= 2.2min
+[CV] clf__estimator__learning_rate=0.5, clf__estimator__n_estimators=10 
+[Parallel(n_jobs=1)]: Done   9 out of   9 | elapsed: 12.2min remaining:    0.0s
+[CV]  clf__estimator__learning_rate=0.5, clf__estimator__n_estimators=10, score=0.1942325297528227, total=  19.3s
+[CV] clf__estimator__learning_rate=0.5, clf__estimator__n_estimators=10 
+[CV]  clf__estimator__learning_rate=0.5, clf__estimator__n_estimators=10, score=0.2027769301190113, total=  19.2s
+[CV] clf__estimator__learning_rate=0.5, clf__estimator__n_estimators=10 
+[CV]  clf__estimator__learning_rate=0.5, clf__estimator__n_estimators=10, score=0.20323466585291425, total=  19.2s
+[CV] clf__estimator__learning_rate=0.5, clf__estimator__n_estimators=50 
+[CV]  clf__estimator__learning_rate=0.5, clf__estimator__n_estimators=50, score=0.22459566676838572, total= 1.2min
+[CV] clf__estimator__learning_rate=0.5, clf__estimator__n_estimators=50 
+[CV]  clf__estimator__learning_rate=0.5, clf__estimator__n_estimators=50, score=0.2354287458040891, total= 1.2min
+[CV] clf__estimator__learning_rate=0.5, clf__estimator__n_estimators=50 
+[CV]  clf__estimator__learning_rate=0.5, clf__estimator__n_estimators=50, score=0.22947818126335062, total= 1.2min
+[CV] clf__estimator__learning_rate=0.5, clf__estimator__n_estimators=100 
+[CV]  clf__estimator__learning_rate=0.5, clf__estimator__n_estimators=100, score=0.23756484589563626, total= 2.2min
+[CV] clf__estimator__learning_rate=0.5, clf__estimator__n_estimators=100 
+[CV]  clf__estimator__learning_rate=0.5, clf__estimator__n_estimators=100, score=0.25068660360085443, total= 2.2min
+[CV] clf__estimator__learning_rate=0.5, clf__estimator__n_estimators=100 
+[CV]  clf__estimator__learning_rate=0.5, clf__estimator__n_estimators=100, score=0.2413793103448276, total= 2.2min
+[CV] clf__estimator__learning_rate=1.0, clf__estimator__n_estimators=10 
+[CV]  clf__estimator__learning_rate=1.0, clf__estimator__n_estimators=10, score=0.1959108941104669, total=  19.1s
+[CV] clf__estimator__learning_rate=1.0, clf__estimator__n_estimators=10 
+[CV]  clf__estimator__learning_rate=1.0, clf__estimator__n_estimators=10, score=0.21315227342081172, total=  18.9s
+[CV] clf__estimator__learning_rate=1.0, clf__estimator__n_estimators=10 
+[CV]  clf__estimator__learning_rate=1.0, clf__estimator__n_estimators=10, score=0.21299969484284406, total=  19.0s
+[CV] clf__estimator__learning_rate=1.0, clf__estimator__n_estimators=50 
+[CV]  clf__estimator__learning_rate=1.0, clf__estimator__n_estimators=50, score=0.22902044552944767, total= 1.2min
+[CV] clf__estimator__learning_rate=1.0, clf__estimator__n_estimators=50 
+[CV]  clf__estimator__learning_rate=1.0, clf__estimator__n_estimators=50, score=0.23756484589563626, total= 1.2min
+[CV] clf__estimator__learning_rate=1.0, clf__estimator__n_estimators=50 
+[CV]  clf__estimator__learning_rate=1.0, clf__estimator__n_estimators=50, score=0.22841013121757706, total= 1.2min
+[CV] clf__estimator__learning_rate=1.0, clf__estimator__n_estimators=100 
+[CV]  clf__estimator__learning_rate=1.0, clf__estimator__n_estimators=100, score=0.22703692401586817, total= 2.2min
+[CV] clf__estimator__learning_rate=1.0, clf__estimator__n_estimators=100 
+[CV]  clf__estimator__learning_rate=1.0, clf__estimator__n_estimators=100, score=0.24382056759231005, total= 2.2min
+[CV] clf__estimator__learning_rate=1.0, clf__estimator__n_estimators=100 
+[CV]  clf__estimator__learning_rate=1.0, clf__estimator__n_estimators=100, score=0.23100396704302717, total= 2.2min
+[Parallel(n_jobs=1)]: Done  27 out of  27 | elapsed: 36.4min finished
+
+
+CV-AdaBoost-PARAMETERS		n_estimators
+learning_rate			10	50	100	
+0.1				0.184	0.207	0.212
+0.5				0.200	0.230	0.243
+1.0				0.207	0.232	0.234
