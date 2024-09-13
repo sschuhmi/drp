@@ -30,7 +30,7 @@ tbd
 
 The following files are provided within this project:
 <ul>
-  <li><b>tbd:</b> tbd</li>
+  <li><b>Jupyter Notebooks:</b> The notebooks for ETL Pipeline and ML Pipeline - as preparation for the actual Python scripts - are included in the corresponding subfolder.</li>
   <li><b>tbd:</b> tbd</li>
   <li><b>README.md:</b> This file</li>
 </ul>
