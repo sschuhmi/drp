@@ -62,6 +62,15 @@ The required (Python) libraries are automatically installed within the execution
 
 The results are shown in a web app where the user can additionally enter messages to be classified by the established model.
 
+Besides the possibility to enter a message for classification (and see the classification results after pushing the button 'Classify message'), the following 5 visualizations are shown:
+<ul>
+ <li>Distribution of the messages according to genres ('news', 'direct', 'social')</li>
+ <li>Distribution of all messages according to the 36 categories</li>
+ <li>Distribution only of 'news' messages according to the 36 categories</li>
+ <li>Distribution only of 'direct' messages according to the 36 categories</li>
+ <li>Distribution only of 'social' messages according to the 36 categories</li>
+</ul>
+
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
 This projects relies on the messages and category filenames provided by Udacity within its Data Science Nanodegree (nd025).
