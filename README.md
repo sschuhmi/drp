@@ -71,8 +71,9 @@ Besides the possibility to enter a message for classification (and see the class
  <li>Distribution only of 'social' messages according to the 36 categories</li>
 </ul>
 
-Here is an exemplary screenshot of the web app:
-<img src="https://github.com/sschuhmi/drp/blob/main/app/AppScreen.jpeg" alt="Web app" width="500">
+Here is an exemplary screenshot of the web app.
+
+<img src="https://github.com/sschuhmi/drp/blob/main/app/AppScreen.jpeg" alt="Web app" width=window.screen.width>
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
