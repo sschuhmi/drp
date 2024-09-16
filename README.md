@@ -37,12 +37,26 @@ The following files are provided within this project:
 
 ## Installation & Libraries <a name="installation"></a>
 
-tbd
+In order the install and run the disaster response app, the following steps have to be performed in a terminal session (please adapt filepaths and filenames where needed):
+<ol>
+  <li>Run the following commands in the project's root directory to set up your database and model.
+    - To run ETL pipeline that cleans data and stores in database
+        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+    - To run ML pipeline that trains classifier and saves
+        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+  </li>
+  <li>Go to `app` directory: `cd app`</li>
+  <li>Run your web app: `python run.py`</li>
+  <li>Click the `PREVIEW` button to open the homepage</li>
+</ol>
+
+The required (Python) libraries are automatically installed within the execution of the Python scripts.
 
 ## Results <a name="results"></a>
 
-tbd
+The results are shown in a web app where the user can additionally enter messages to be classified by the established model.
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
-tbd
+Uses the message and category filenames provided by Udacity within its Data Science Nanodegree (nd025).
+These have been provided by Udacity´s partner [Appen](https://www.figure-eight.com/) (formally: Figure 8).
