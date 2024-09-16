@@ -32,7 +32,7 @@ Precisely, the following data is used:
 
 ## Provided Files <a name="files"></a>
 
-The following files are provided within this project:
+The following folders and files are provided within this project:
 <ul>
    <li><b>Data:</b>The input data for the project (message and categories) as well as the created SQLite database (drp.db) and the Python script for processing the data
    <li><b>Jupyter Notebooks:</b>The notebooks for preparing the ETL-Pipeline and the ML-Pipeline as well as some logging information from the data preparation process are included in the corresponding subfolder.</li>
