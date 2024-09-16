@@ -64,12 +64,14 @@ The results are shown in a web app where the user can additionally enter message
 
 Besides the possibility to enter a message for classification (and see the classification results after pushing the button 'Classify message'), the following 5 visualizations are shown:
 <ul>
- <li>Distribution of the messages according to genres ('news', 'direct', 'social')</li>
+ <li>Distribution of all messages according to genres ('news', 'direct', 'social')</li>
  <li>Distribution of all messages according to the 36 categories</li>
  <li>Distribution only of 'news' messages according to the 36 categories</li>
  <li>Distribution only of 'direct' messages according to the 36 categories</li>
  <li>Distribution only of 'social' messages according to the 36 categories</li>
 </ul>
+
+Here is an exemplary screenshot of the web app:
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
