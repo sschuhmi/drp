@@ -53,7 +53,7 @@ In order the install and run the disaster response app, the following steps have
   </li>
   <li>Go to 'app' directory: 'cd app'</li>
   <li>Run your web app: 'python run.py'</li>
-  <li>Click the `PREVIEW` button to open the homepage</li>
+  <li>Click the 'PREVIEW' button to open the homepage</li>
 </ol>
 
 The required (Python) libraries are automatically installed within the execution of the Python scripts and feature some common Python libaries like NumPy or Pandas as well as models and metrics from scikit-learn.
