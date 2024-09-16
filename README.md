@@ -72,7 +72,7 @@ Besides the possibility to enter a message for classification (and see the class
 </ul>
 
 Here is an exemplary screenshot of the web app:
-(https://github.com/sschuhmi/drp/blob/main/app/AppScreen.jpeg)
+<img src="https://github.com/sschuhmi/drp/blob/main/app/AppScreen.jpeg" alt="Web app" width="500">
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
