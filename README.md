@@ -46,10 +46,10 @@ The following folders and files are provided within this project:
 In order the install and run the disaster response app, the following steps have to be performed in a terminal session (please adapt filepaths and filenames where needed):
 <ol>
   <li>Run the following commands in the project's root directory to set up your database and model.
-    - To run ETL pipeline that cleans data and stores in database
-        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
-    - To run ML pipeline that trains classifier and saves
-        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+    <ul>
+      <li>To run ETL pipeline that cleans data and stores in database: 'python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db'</li>
+      <li>To run ML pipeline that builds model, trains and evaluates classifier: 'python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl'</li>
+    </ul>
   </li>
   <li>Go to `app` directory: `cd app`</li>
   <li>Run your web app: `python run.py`</li>
