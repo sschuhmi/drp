@@ -8,11 +8,11 @@ This project is included within Udacity´s 'Data Scientist' Nanodegree Program (
 ### Table of Contents
  
 1. [Project Motivation](#motivation)
-2. [Survey Data](#surveydata)
+2. [Project Data](#project_data)
 3. [Provided Files](#files)
 4. [Installation](#installation)
 5. [Results](#results)
-6. [Licensing, Authors, and Acknowledgements](#licensing)
+6. [Sources & Licensing](#licensing)
 
 ## Project Motivation <a name="motivation"></a>
 
@@ -75,7 +75,7 @@ Here is an exemplary screenshot of the web app.
 
 <img src="https://github.com/sschuhmi/drp/blob/main/app/AppScreen.jpeg" alt="Web app" width=window.screen.width>
 
-## Licensing, Authors, Acknowledgements<a name="licensing"></a>
+## Sources & Licensing<a name="licensing"></a>
 
 This projects relies on the messages and category filenames provided by Udacity within its Data Science Nanodegree (nd025).
 These have been collected and prepared by Udacity´s partner [Appen](https://www.figure-eight.com/) (formerly: Figure 8) - please refer to them for licence information.
