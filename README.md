@@ -78,4 +78,4 @@ Here is an exemplary screenshot of the web app.
 ## Sources & Licensing<a name="licensing"></a>
 
 This projects relies on the messages and category filenames provided by Udacity within its Data Science Nanodegree (nd025).
-These have been collected and prepared by Udacity´s partner [Appen](https://www.figure-eight.com/) (formerly: Figure 8) - please refer to them for licence information.
+These have been collected and prepared by Udacity´s partner [Appen](https://www.figure-eight.com/) (formerly: Figure 8) - please refer to them for license information.
