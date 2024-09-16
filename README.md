@@ -24,7 +24,11 @@ The project also includes a web app where an emergency worker can input a new me
 
 ## Project Data <a name="project_data"></a>
 
-tbd
+The project feature a data set containing real messages that were sent during disaster events are were provided by Appen (formerly: Figure 8) for the Udacity projects.
+
+Precisely, the following data is used:
+- Over 25k Messages sent during disaster events
+- Categorization of these messages according to 36 disaster message categories (e.g., "request", "offer", "medical_help", "fire", "storm")
 
 ## Provided Files <a name="files"></a>
 
@@ -59,4 +63,4 @@ The results are shown in a web app where the user can additionally enter message
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
 Uses the message and category filenames provided by Udacity within its Data Science Nanodegree (nd025).
-These have been provided by Udacity´s partner [Appen](https://www.figure-eight.com/) (formally: Figure 8).
+These have been provided by Udacity´s partner [Appen](https://www.figure-eight.com/) (formerly: Figure 8) - please refer to them for licence information.
