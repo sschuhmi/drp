@@ -34,8 +34,10 @@ Precisely, the following data is used:
 
 The following files are provided within this project:
 <ul>
-  <li><b>Jupyter Notebooks:</b> The notebooks for preparing the [ETL-Pipeline](https://github.com/sschuhmi/drp/blob/main/Jupyter%20Notebooks/ETL%20Pipeline%20Preparation.ipynb) and the ML-Pipeline are included in the corresponding subfolder.</li>
-  <li><b>tbd:</b> tbd</li>
+   <li><b>Data:</b>The input data for the project (message and categories) as well as the created SQLite database (drp.db) and the Python script for processing the data
+   <li><b>Jupyter Notebooks:</b>The notebooks for preparing the ETL-Pipeline and the ML-Pipeline as well as some logging information from the data preparation process are included in the corresponding subfolder.</li>
+  <li><b>app:</b>The Python script to run the web app which shows the results of the classification and additionally allows the user to enter further messages for classification</li>
+  <li><b>models:</b>The stored classifier in a Pickle file (classifier.pkl) and the Python script to train the classifier.</li>
   <li><b>README.md:</b> This file</li>
 </ul>
 
