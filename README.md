@@ -67,6 +67,7 @@ Version check of Python libraries:
   <li>Numpy: v1.26.0</li>
   <li>scikit-learn: v0.24.2 (hint: use of v1.0.0 or higher led to compilation errors)</li>
   <li>scipy: v1.13.1</li>
+  <li>plotly: v</li>
 </ul>
 
 ## Results <a name="results"></a>
