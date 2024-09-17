@@ -64,12 +64,17 @@ Within this project, Python v3.6.3 was used. The required additional libraries a
 
 Version check of Python libraries:
 <ul>
-  <li>Python: v3.6.3</li>
-  <li>Pandas: v2.2.2</li>
-  <li>Numpy: v1.23.0</li>
-  <li>scikit-learn: v0.24.2 (hint: use of v1.0.0 or higher led to compilation errors)</li>
-  <li>scipy: v1.13.1</li>
-  <li>plotly: v5.24.1</li>
+  <li>Flask==2.0.2</li>
+  <li>joblib==1.1.0</li>
+  <li>nltk==3.6.5</li>
+  <li>MarkupSafe==2.0.1</li>
+  <li>numpy==1.21.4</li>
+  <li>pandas==1.3.5</li>
+  <li>plotly==5.4.0/li>
+  <li>scikit-learn==1.0.1</li>
+  <li>scipy==1.7.3</li>
+  <li>SQLAlchemy==1.4.28</li>
+  <li>Werkzeug==2.0.2</li>
 </ul>
 
 ## Results <a name="results"></a>
