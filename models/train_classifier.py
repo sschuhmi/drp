@@ -1,4 +1,4 @@
-import sys, re, nltk, pickle
+import sys, re, nltk, pickle, sklearn
 import pandas as pd
 import numpy as np
 from sqlalchemy import create_engine
@@ -11,12 +11,10 @@ from nltk.stem import WordNetLemmatizer
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.multioutput import MultiOutputClassifier
-# Import of Estimators:
-from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
-from sklearn.svm import SVC
-# Specific import for split into training & test set, and GridSearchCV:
-from sklearn.model_selection import train_test_split, GridSearchCV
+# Import of Estimator (AdaBoost):
+from sklearn.ensemble import AdaBoostClassifier
+# Specific import for split into training & test set:
+from sklearn.model_selection import train_test_split
 # Import of classification report (if needed):
 from sklearn.metrics import classification_report
 
@@ -88,7 +86,7 @@ def build_model():
     model = Pipeline([
         ('vect', CountVectorizer(tokenizer=tokenize)),
         ('tfidf', TfidfTransformer()),
-        ('clf', MultiOutputClassifier(AdaBoostClassifier(algorithm='SAMME', learning_rate=1.0, n_estimators=50, random_state=None))) 
+        ('clf', MultiOutputClassifier(AdaBoostClassifier(learning_rate=1.0, n_estimators=50, random_state=None))) 
     ])
   
     return model
@@ -133,7 +131,7 @@ def save_model(model, model_filepath):
         - Nothing
     """
     # Save classifier with pickle:
-    with open('classifier.pkl', 'wb') as file:
+    with open(model_filepath, 'wb') as file:
         pickle.dump(model, file)
     
     return
