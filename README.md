@@ -55,10 +55,19 @@ In order the install and run the disaster response app, the following steps have
   </li>
   <li>Go to 'app' directory: <b>cd app</b></li>
   <li>Run your web app: <b>python run.py</b></li>
-  <li>Click the 'PREVIEW' button to open the homepage</li>
+  <li>Click the 'PREVIEW' button to open the homepage (in IDE), or go to [http://localhost:3001]/</li>
 </ol>
 
 Within this project, Python v3.6.3 was used. The required additional libraries are automatically installed within the execution of the Python scripts and feature some common Python libaries like NumPy or Pandas as well as models and metrics from scikit-learn.
+
+Version check of Python libraries:
+<ul>
+  <li>Python: v3.6.3</li>
+  <li>Pandas: v2.2.2</li>
+  <li>Numpy: v1.26.0</li>
+  <li>scikit-learn: v1.5.2</li>
+  <li>scipy: v1.13.1</li>
+</ul>
 
 ## Results <a name="results"></a>
 
