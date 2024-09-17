@@ -88,7 +88,7 @@ def build_model():
     model = Pipeline([
         ('vect', CountVectorizer(tokenizer=tokenize)),
         ('tfidf', TfidfTransformer()),
-        ('clf', MultiOutputClassifier(AdaBoostClassifier(learning_rate=1.0, n_estimators=50, random_state=None))) 
+        ('clf', MultiOutputClassifier(AdaBoostClassifier(algorithm='SAMME', learning_rate=1.0, n_estimators=50, random_state=None))) 
     ])
   
     return model
