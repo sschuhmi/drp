@@ -53,8 +53,8 @@ In order the install and run the disaster response app, the following steps have
       <li>To run ML pipeline that builds model, trains and evaluates classifier:<br><b>python models/train_classifier.py data/drp.db models/classifier.pkl</b></li>
     </ul>
   </li>
-  <li>Go to 'app' directory: 'cd app'</li>
-  <li>Run your web app: 'python run.py'</li>
+  <li>Go to 'app' directory: <b>cd app</b></li>
+  <li>Run your web app: <b>python run.py</b></li>
   <li>Click the 'PREVIEW' button to open the homepage</li>
 </ol>
 
