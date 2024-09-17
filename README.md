@@ -39,6 +39,7 @@ The following folders and files are provided within this project:
   <li><b>app:</b> The Python script to run the web app which shows the results of the classification and additionally allows the user to enter further messages for classification, as well as the html files in the "templates" subfolder. An exemplary screenshot of the app with the visualizations is also given here.</li>
   <li><b>models:</b> The stored classifier in a Pickle file (classifier.pkl) and the Python script to train the classifier.</li>
   <li><b>README.md:</b> This help file to get started.</li>
+  <li><b>req.txt:</b> Requirements file, containing necessary Python libraries.</li>
   <li><b>drp.zip:</b> zip-Archive including folders "Data", "app" and "models" with included files.</li>
 </ul>
 
