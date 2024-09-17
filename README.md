@@ -40,7 +40,7 @@ The following folders and files are provided within this project:
   <li><b>models:</b> The stored classifier in a Pickle file (classifier.pkl) and the Python script to train the classifier.</li>
   <li><b>README.md:</b> This help file to get started.</li>
   <li><b>req.txt:</b> Requirements file, containing necessary Python libraries.</li>
-  <li><b>drp.zip:</b> zip-Archive including folders "Data", "app" and "models" with included files.</li>
+  <li><b>drp.zip:</b> zip-Archive including folders "Data", "app" and "models" with included files, and the requirements file.</li>
 </ul>
 
 ## Installation & Libraries <a name="installation"></a>
