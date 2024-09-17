@@ -49,8 +49,8 @@ In order the install and run the disaster response app, the following steps have
    <li>Unzip the file drp.zip in your Python directory to ensure the whole project is available</li>
    <li>Run the following commands in the project's root directory to set up your database and model.
     <ul>
-      <li>To run ETL pipeline that cleans data and stores in database:<br>python data/process_data.py data/messages.csv data/categories.csv data/DisasterResponse.db</li>
-      <li>To run ML pipeline that builds model, trains and evaluates classifier:<br>python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl</li>
+      <li>To run ETL pipeline that cleans data and stores in database:<br><b>python data/process_data.py data/messages.csv data/categories.csv data/DisasterResponse.db</b></li>
+      <li>To run ML pipeline that builds model, trains and evaluates classifier:<br><b>python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl</b></li>
     </ul>
   </li>
   <li>Go to 'app' directory: 'cd app'</li>
