@@ -63,13 +63,16 @@ def clean_data(df):
         # convert column from string to numeric
         categories[column] = pd.to_numeric(categories[column])
     
-    # STEP 3: Replace categories column in df with new category columns.
+    # In categories, replace value "2" by value "1" (obviously data errors in the set, in category "related")
+    categories.replace(2, 1, inplace=True)
+    
+    # STEP 4: Replace categories column in df with new category columns.
     # Drop the original categories column from `df`
     df = df.drop(columns=['categories'])
     # Concatenate the original dataframe with the new `categories` dataframe:
     df = pd.concat([df, categories], axis=1)
     
-    # STEP 4: Remove duplicates:
+    # STEP 5: Remove duplicates:
     # Determine duplicates and store in temporary column:
     df['dup'] = df.duplicated()
     # Drop duplicates:
