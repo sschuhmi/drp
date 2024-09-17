@@ -65,7 +65,7 @@ Version check of Python libraries:
   <li>Python: v3.6.3</li>
   <li>Pandas: v2.2.2</li>
   <li>Numpy: v1.26.0</li>
-  <li>scikit-learn: v1.5.2</li>
+  <li>scikit-learn: v1.0.0</li>
   <li>scipy: v1.13.1</li>
 </ul>
 
