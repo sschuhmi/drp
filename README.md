@@ -39,13 +39,15 @@ The following folders and files are provided within this project:
   <li><b>app:</b> The Python script to run the web app which shows the results of the classification and additionally allows the user to enter further messages for classification. An exemplary screenshot of the app with the visualizations is also given here.</li>
   <li><b>models:</b> The stored classifier in a Pickle file (classifier.pkl) and the Python script to train the classifier.</li>
   <li><b>README.md:</b> This help file to get started.</li>
+  <li><b>drp.zip:</b>zip-Archive including folders "Data", "app" and "models" with included files.</li>
 </ul>
 
 ## Installation & Libraries <a name="installation"></a>
 
 In order the install and run the disaster response app, the following steps have to be performed in a terminal session (please adapt filepaths and filenames where needed):
 <ol>
-  <li>Run the following commands in the project's root directory to set up your database and model.
+   <li>Unzip the file drp.zip in your Python directory to ensure the whole project is available</li>
+   <li>Run the following commands in the project's root directory to set up your database and model.
     <ul>
       <li>To run ETL pipeline that cleans data and stores in database: 'python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db'</li>
       <li>To run ML pipeline that builds model, trains and evaluates classifier: 'python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl'</li>
