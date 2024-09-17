@@ -116,7 +116,7 @@ def evaluate_model(model, X_test, Y_test, category_names):
     i = 0
     for category in category_names:
         print((i+1),'.',category,':')
-        print(classification_report(Y_test.iloc[:,i], Y_pred[:,i], target_names=category_names))
+        print(classification_report(Y_test.iloc[:,i], Y_pred[:,i]))
         i += 1
     
     return
